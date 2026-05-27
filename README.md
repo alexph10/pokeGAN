@@ -1,7 +1,5 @@
 # PokeGAN
 
-A reimplementation of the [parisimaa/PokGAN](https://github.com/parisimaa/PokGAN)
-project — generating novel Pokémon sprites using two GAN variants:
 
 1. **DCGAN** ([`pokegan.py`](./pokegan.py)) — a classic Deep Convolutional GAN,
    64 × 64 RGB outputs, trained with `DistributedDataParallel`.
