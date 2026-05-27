@@ -1,11 +1,11 @@
 #### PokeGAN
 
 
-1. **DCGAN** ([`pokegan.py`](./pokegan.py)) — a classic Deep Convolutional GAN,
+1. **DCGAN** ([`pokegan.py`](./pokegan.py)) — a Deep Convolutional GAN,
    64 × 64 RGB outputs, trained with `DistributedDataParallel`.
 2. **AEGAN** ([`AEGAN/AEGAN/`](./AEGAN/AEGAN)) — an Autoencoder GAN with four
    networks (Generator + Encoder + image- and latent-discriminators),
-   96 × 96 RGB outputs, with cycle-consistent image and latent reconstruction.
+   96 × 96 RGB outputs.
 
 #### Project Structure
 
@@ -54,16 +54,3 @@ Per-epoch image grids are saved to `generated<ex>/generated-images-NNNN.png`,
 final weights to `<ex>G.pth` / `<ex>D.pth`, a loss plot to `<ex>GDLoss.png`,
 and a training animation to `<ex>animation.gif`.
 
-#### Hardware
-
-The original project was trained on the NYU HPC cluster with:
-
-- **RTX 8000** (1× and 4×) for both DCGAN and AEGAN
-- **V100** (1×, 4×, 8×) for DCGAN distributed scaling experiments
-
-GPU profiling logs live under `Result/`.
-
-#### Credit
-
-Reimplementation of work by Parisima Abdali (pa2297) and Karan Vora (kv2154),
-NYU Deep Learning Final Project.
