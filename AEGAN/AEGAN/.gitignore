@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+data/sprites_rgb/*.png
+results/
+*.pt

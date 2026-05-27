@@ -1,0 +1,66 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.Python
+build/
+dist/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Datasets (downloaded locally, do not commit) ---
+input/pokemon_dataset/*
+!input/pokemon_dataset/.gitkeep
+input/pokemon_jpg/
+input/pokemon/
+AEGAN/AEGAN/data/
+AEGAN/AEGAN/data/sprites_rgb/*.png
+
+# --- Training outputs ---
+# Ignore contents of generated* folders (not the folders themselves, so .gitkeep is preserved).
+generated*/**
+!generated*/.gitkeep
+Models/*
+!Models/.gitkeep
+AEGAN/results/generated/*
+!AEGAN/results/generated/.gitkeep
+AEGAN/results/reconstructed/*
+!AEGAN/results/reconstructed/.gitkeep
+AEGAN/results/checkpoints/*
+!AEGAN/results/checkpoints/.gitkeep
+AEGAN/AEGAN/samples/*
+!AEGAN/AEGAN/samples/.gitkeep
+
+# --- Model weights / checkpoints ---
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+trained_generator_weights.pt
+
+# --- Plots / animations from training ---
+*GDLoss.png
+*animation.gif
+testfake.*.png
+
+# --- Profiling / job logs ---
+Result/*
+!Result/.gitkeep
+*.result
+*.csv
+*.log
+
+# --- Misc temp/test ---
+test_download/
+tmp/
+*.tmp
