@@ -32,18 +32,6 @@ pokeGAN/
         └── pause.json          # Runtime pause control
 ```
 
-## DCGAN — Quick Start
-
-Place training images under `input/<any_subfolder>/*.jpg`:
-
-```
-input/
-└── pokemon_dataset/
-    ├── img_1.jpg
-    ├── img_2.jpg
-    └── ...
-```
-
 Run:
 
 ```bash
@@ -67,16 +55,6 @@ python pokegan.py --ex test
 Per-epoch image grids are saved to `generated<ex>/generated-images-NNNN.png`,
 final weights to `<ex>G.pth` / `<ex>D.pth`, a loss plot to `<ex>GDLoss.png`,
 and a training animation to `<ex>animation.gif`.
-
-## AEGAN — Quick Start
-
-See [AEGAN/AEGAN/README.md](./AEGAN/AEGAN/README.md).
-
-```bash
-cd AEGAN/AEGAN
-pip install -r requirements.txt
-python main.py
-```
 
 ## Hardware
 
