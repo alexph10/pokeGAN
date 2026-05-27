@@ -1,4 +1,4 @@
-# PokeGAN
+#### PokeGAN
 
 
 1. **DCGAN** ([`pokegan.py`](./pokegan.py)) — a classic Deep Convolutional GAN,
@@ -7,7 +7,7 @@
    networks (Generator + Encoder + image- and latent-discriminators),
    96 × 96 RGB outputs, with cycle-consistent image and latent reconstruction.
 
-## Project Structure
+#### Project Structure
 
 ```
 pokeGAN/
@@ -37,7 +37,7 @@ pip install torch torchvision matplotlib seaborn numpy pillow
 python pokegan.py --ex test
 ```
 
-### DCGAN Hyperparameters
+#### DCGAN Hyperparameters
 
 | Parameter | Value |
 |---|---|
@@ -54,7 +54,7 @@ Per-epoch image grids are saved to `generated<ex>/generated-images-NNNN.png`,
 final weights to `<ex>G.pth` / `<ex>D.pth`, a loss plot to `<ex>GDLoss.png`,
 and a training animation to `<ex>animation.gif`.
 
-## Hardware
+#### Hardware
 
 The original project was trained on the NYU HPC cluster with:
 
@@ -63,7 +63,7 @@ The original project was trained on the NYU HPC cluster with:
 
 GPU profiling logs live under `Result/`.
 
-## Credit
+#### Credit
 
 Reimplementation of work by Parisima Abdali (pa2297) and Karan Vora (kv2154),
 NYU Deep Learning Final Project.
