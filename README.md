@@ -1,4 +1,4 @@
-#### PokeGAN
+#### PokeGAN (wip)
 
 
 1. **DCGAN** ([`pokegan.py`](./pokegan.py)) — a Deep Convolutional GAN,
