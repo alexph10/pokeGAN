@@ -37,19 +37,6 @@ pip install torch torchvision matplotlib seaborn numpy pillow
 python pokegan.py --ex test
 ```
 
-#### DCGAN Hyperparameters
-
-| Parameter | Value |
-|---|---|
-| Latent dim | 16 |
-| Image size | 64 × 64 |
-| Batch size | 128 |
-| Epochs | 500 |
-| Optimizer | Adam (β₁=0.5, β₂=0.999) |
-| Learning rate (G and D) | 0.00028 |
-| Loss | BCELoss |
-| Parallelism | `DataParallel` + `DistributedDataParallel` (gloo) |
-
 Per-epoch image grids are saved to `generated<ex>/generated-images-NNNN.png`,
 final weights to `<ex>G.pth` / `<ex>D.pth`, a loss plot to `<ex>GDLoss.png`,
 and a training animation to `<ex>animation.gif`.
