@@ -30,14 +30,3 @@ pokeGAN/
         └── pause.json          # Runtime pause control
 ```
 
-Run:
-
-```bash
-pip install torch torchvision matplotlib seaborn numpy pillow
-python pokegan.py --ex test
-```
-
-Per-epoch image grids are saved to `generated<ex>/generated-images-NNNN.png`,
-final weights to `<ex>G.pth` / `<ex>D.pth`, a loss plot to `<ex>GDLoss.png`,
-and a training animation to `<ex>animation.gif`.
-
